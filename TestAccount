@@ -1,0 +1,33 @@
+ import java.util.ArrayList;
+    import java.util.Collections;
+    class TestFortune
+    {
+       public static void main(String[] args)
+       {
+           ArrayList<Account> persons = new ArrayList<Account>(5);
+           Account obj;
+          
+
+       obj = new Account(30.0);
+       persons.add(obj);
+      
+       obj = new Account(200000.0);
+       persons.add(obj);
+      
+       obj = new Account(2000.0);
+       persons.add(obj);
+      
+       obj = new Account(100.0);
+       persons.add(obj);
+      
+       obj = new Account(20.0);
+       persons.add(obj);
+      
+       Collections.sort(persons);
+
+       for (Account y : persons)
+       {
+           System.out.println(y.toString());
+       }
+    }
+}
