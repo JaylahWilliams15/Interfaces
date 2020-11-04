@@ -1,0 +1,10 @@
+interface Investable
+{
+    final double DEFAULT_VALUE=0;
+    final double DEFAULT_FACTOR=1;
+    final double DEFAULT_PERCENT=100;
+    public void growByPercent(double percent);
+    public void growByFactor(double factor);
+    public void growByValue(double value);
+   
+}
